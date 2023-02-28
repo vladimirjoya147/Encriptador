@@ -3,18 +3,28 @@
     font-family: 'inter';
     font-weight: 300px;
     font-size: 32px;
-    line-height: 100%;
+    
+    
 
 }
 
 body{
-    margin:0 ; 
+    margin:0 ;
+    
+    
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
     
 }
 
 
 .informacioningreso{
-    position: absolute;
     top:59%;
     color: #495057;
     font-size: 18px;
@@ -34,15 +44,7 @@ body{
     transition:1000ms;
 }
 
-main{
-    width: 80%;
-    display: flex;
-    margin-bottom:85px;
-    margin-left: 150px;
-    height: 480px;
-    
-    
-}
+
 
 .ingresotexto{
     border: none;
@@ -59,7 +61,6 @@ main{
 
 
 .mensaje::placeholder{
-    position: relative;
     top: 74%;
     font-weight: bold;
     text-align: center;
@@ -75,13 +76,8 @@ main{
     border: none;
     border-radius: 24px;
     color: #8a0a73;
-    margin-left: 100px;
-    margin-top: 5px;
-    padding-left: 20px;
-    position: absolute;
-    width: 25%;
-    left: 60%;
-    height: 70%;
+    
+
 
 }
 
@@ -90,19 +86,13 @@ main{
 }
 
 .persona{
-    position: absolute;
-    width: 100%;
-    height: 100px;
     background: white;
 }
 
 .botondes{
-    position: relative;
     color: #8a0a73;
     width: 328px;
     height: 67px;
-    left: auto;
-    top: 80px;
     border-radius: 24px;
     border: 2px solid #8a0a73;
     cursor: pointer;
@@ -115,17 +105,15 @@ main{
 }
 
 .botonen{
-    position: relative;
     color: white;
     width: 328px;
     height: 67px;
-    top: 80px;
     border-radius: 24px;
     background:#8a0a73;
     cursor: pointer;
-    display:inline-block;
     margin-right:50px;
     margin-top: 10px;
+    margin-bottom:10px ;
 }
 
 .botonen:hover{
@@ -134,54 +122,115 @@ main{
 
 }
 .copiar{
-    display: none;
     color: #0A3871;
     cursor: pointer;
     border-radius: 24px;
     border: 1px solid #0A3871;
     height: 67px;
-    margin-top: 27%;
-    position: fixed;
     width: 200px;
-    left: 74%;
+    display: none;
+    
 }
 
 footer{
     background-color:black;
     width: 100%;
-    height: 100px;
     line-height: normal;
     opacity: 80%;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    height: 13vh;
 }
 
 .create{
     color: white;
     background-color: black;
-    display: inline-block;
     opacity: 98%;
     margin: 1%;
-    padding-left: 15%;
     font-size: 24px;
-    line-height: 0px;
-    margin-left: 20%;
+    
     
 }
 
 .git{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color:black;
+    padding-top: 6px;
 }
 
 .div1{
-    display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin-top:1% ;
 }
 
 a{
     display: block;
-    height: 50px;
-    width: 50px; 
+    height: 40px;
+    width: 40px; 
+}
+
+.seccion1{
+    padding-right:2rem;
+}
+
+.botontextarea{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+
+    main{
+        display: grid;           
+    }
+    .seccion1{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .seccion2{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .botones{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .botonen{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .ingresotexto{
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .informacioningreso{
+        margin: 1rem;
+    }
+
+    .mensaje{
+        margin-right: 10px;
+    }
+
 }
