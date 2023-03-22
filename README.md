@@ -2,7 +2,7 @@
 
 
 <p align = "center">
-    <img src="https://user-images.githubusercontent.com/121407957/226837873-f5002dc4-052f-408e-8ac9-57a2c9adc3d6.gif">
+    <img src="https://user-images.githubusercontent.com/121407957/226850276-8796ed79-6375-4ba8-9d60-15ebe3160a89.gif">
 </p>
 
 
